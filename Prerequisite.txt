@@ -1,0 +1,7 @@
+7Zip		https://www.7-zip.org/download.html
+
+JRE8		http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html
+
+zookeeper	https://zookeeper.apache.org/releases.html
+
+kafka		http://kafka.apache.org/downloads.html

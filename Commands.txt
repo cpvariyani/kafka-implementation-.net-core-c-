@@ -1,0 +1,17 @@
+Zookeeper Start
+C:\kafka-2.12>	zkServer
+Kafka Start
+C:\kafka-2.12>	.\bin\windows\kafka-server-start.bat .\config\server.properties
+
+Create Topic
+C:\kafka-2.12\bin\windows>	kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic temp-topic
+
+Start Producer 
+C:\kafka-2.12\bin\windows>	kafka-console-producer.bat --broker-list localhost:9092 --topic temp-topic
+
+Start Consumer
+C:\kafka-2.12\bin\windows>	kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic temp-topic --from-beginning
+
+Topics in the list
+C:\kafka-2.12\bin\windows>	kafka-topics --zookeeper localhost:2181 --list
+
